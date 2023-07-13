@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: react-topology
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-user-workloads-stage/jephilli-tenant/test-app-1/react-topology@sha256:bee0dd3145620cdcea39bfe897fc8ce6b64f9f45dfad43b095de72f8320b40d8
         name: my-nodejs
         ports:
         - containerPort: 3001
