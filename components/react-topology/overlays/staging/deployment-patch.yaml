@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: react-topology
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/jephilli-tenant/test-app-1/react-topology@sha256:bee0dd3145620cdcea39bfe897fc8ce6b64f9f45dfad43b095de72f8320b40d8
+        name: my-nodejs
+        resources: {}
+status: {}
